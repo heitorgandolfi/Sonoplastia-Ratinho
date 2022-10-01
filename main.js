@@ -1,6 +1,6 @@
-function play(idElementoAudio) {
+function play(idElement) {
 
-    window.document.querySelector(idElementoAudio).play();
+    window.document.querySelector(idElement).play();
 
 }
 
