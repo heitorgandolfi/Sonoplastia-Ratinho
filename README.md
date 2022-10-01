@@ -1,7 +1,3 @@
-
------------
-READme.md
-
 # Sonoplastia do Ratinho. :mouse:
 
 ### **Sobre o projeto:**
