@@ -1,0 +1,112 @@
+body {
+    background-image: url(./assets/background-photo.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    margin-top: 8rem;
+    margin-left: 8rem;
+}
+
+
+#title {
+    font-family: 'Bungee Spice', cursive;
+    text-shadow: 1px 2px 3px rgb(53, 47, 47);
+    text-transform: uppercase;
+    color: rgb(240, 69, 2);
+
+    font-size: 36px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+#keyboard {
+    background-image: linear-gradient(150deg, #d7d9df 0, #e6e8f0 50%, #c2c9e0 100%);
+
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+
+    box-shadow: 5px 5px 2px rgb(17, 16, 16);
+    box-sizing: border-box;
+
+    width: 28em;
+    height: 32em;
+    padding: 1.2em;
+    border-radius: 10%;
+}
+
+.key {
+    cursor: pointer;
+
+    background-image: linear-gradient(115deg, #faffff 0, #eff4f246 25%, #e1dcde 50%, #d2c5cb 75%, #c5b3be 100%);
+    box-shadow: 3px 3px 4px rgb(114, 114, 114);
+
+    font-family: 'Dangrek', cursive;
+    text-transform: uppercase;
+    color: rgb(26, 10, 10);
+
+    padding: 3px;
+    height: 9em;
+    border-radius: 30%;
+}
+
+.key:hover {
+    border: 2px solid rgba(85, 92, 97, 0.801);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.key:active {
+    background-image: linear-gradient(115deg, #b8c7c4 0, #aeb4b3a4 25%, #a19e9f 50%, #93888d 75%, #877780 100%);
+    border: 2px solid rgba(255, 255, 255, 0.575);
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #title {
+        margin-top: 30px;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #keyboard {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        box-sizing: border-box;
+        background-image: none;
+        justify-items: center;
+
+        border: 1px solid rgba(245, 235, 235, 0.432);
+        width: 90%;
+        height: 80vh;
+    }
+
+    .key {
+        background-image: linear-gradient(115deg, #faffff 0, #eff4f29f 25%, #e1dcde 50%, #d2c5cb 75%, #c5b3be 100%);
+        height: 13.6vh;
+        width: 29vw;
+        border-radius: 30%;
+    }
+
+    .key:hover {
+        border: 2px solid rgba(85, 92, 97, 0.801);
+    }
+}
