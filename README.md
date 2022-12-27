@@ -1,7 +1,7 @@
 # Sonoplastia do Ratinho. :mouse:
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/113437603/203647821-8f54a527-d786-498a-8d59-488215328914.png" width="760px">
+<img src="https://user-images.githubusercontent.com/113437603/209691579-2c13f7a2-b424-4aa7-a1c2-8547f3bc07c6.png" width="760px">
 </div>
 
 ### **Sobre o projeto:**
@@ -14,7 +14,7 @@
 
 ### **Deploy do projeto:**
 
-- https://heitorgandolfi.github.io/sonoplastia-ratinho/.
+- https://sonoplastia-ratinho.vercel.app/
 
 <br>
 
