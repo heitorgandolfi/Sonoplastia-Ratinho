@@ -2,113 +2,78 @@ body {
     background-image: url(./assets/background-photo.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
+    height: 100vh;
 
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 16px 0px;
 
-    height: 100vh;
-    width: 100%;
     overflow: hidden;
-
-    margin-top: 5rem;
-    margin-left: 8rem;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
 
 #title {
     font-family: 'Bungee Spice', cursive;
-    text-shadow: 1px 2px 3px rgb(53, 47, 47);
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
     text-transform: uppercase;
     color: rgb(240, 69, 2);
-
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+}
 
-    margin-bottom: 15px;
+@media screen and (max-width: 358px) {
+    #title {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 252px) {
+    #title {
+        font-size: 28px;
+    }
 }
 
 #keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+    max-width: 400px;
+    width: 100%;
+    width: 95%;
+    padding: 12px 4px;
+    border-radius: 12px;
+
     background-image: linear-gradient(150deg, #d7d9df 0, #e6e8f0 50%, #c2c9e0 100%);
-
-    display: grid;
-    gap: 12px;
-    grid-template-columns: repeat(3, 1fr);
-
     box-shadow: 5px 5px 2px rgb(17, 16, 16);
-    box-sizing: border-box;
-
-    width: 28em;
-    height: 32em;
-    padding: 1.2em;
-    border-radius: 10%;
 }
 
 .key {
+    max-width: 100px;
+    width: 95%;
+    padding: 24px 8px;
+
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
 
-    background-image: linear-gradient(115deg, #faffff 0, #eff4f246 25%, #e1dcde 50%, #d2c5cb 75%, #c5b3be 100%);
-    box-shadow: 3px 3px 4px rgb(114, 114, 114);
-
-    font-family: 'Dangrek', cursive;
-    text-transform: uppercase;
-    color: rgb(26, 10, 10);
-
-    padding: 3px;
-    height: 9em;
-    border-radius: 30%;
+    border-radius: 12px;
+    border: 1px solid rgba(207, 207, 207, 0.575);
+    box-shadow: 9px 3px 20px -10px rgba(0, 0, 0, 0.65);
 }
 
 .key:hover {
-    border: 2px solid rgba(85, 92, 97, 0.801);
-    transform: scale(1.05);
-    transition: 0.4s;
-}
-
-.key:active {
-    background-image: linear-gradient(115deg, #b8c7c4 0, #aeb4b3a4 25%, #a19e9f 50%, #93888d 75%, #877780 100%);
-    border: 2px solid rgba(255, 255, 255, 0.575);
-}
-
-@media screen and (max-width: 768px) {
-
-    body {
-        background-size: cover;
-        background-position: center center;
-        align-items: center;
-        margin: 0 auto;
-        overflow-x: hidden;
-        overflow-y: visible;
-    }
-
-    #title {
-        margin-top: 30px;
-        font-size: 30px;
-        text-align: center;
-        padding: 10px;
-    }
-
-    #keyboard {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-
-        box-sizing: border-box;
-        background-image: none;
-        justify-items: center;
-
-        border: 1px solid rgba(245, 235, 235, 0.432);
-        width: 90%;
-        height: 75vh;
-    }
-
-    .key {
-        background-image: linear-gradient(115deg, #faffff 0, #eff4f29f 25%, #e1dcde 50%, #d2c5cb 75%, #c5b3be 100%);
-        height: 12.6vh;
-        width: 29vw;
-        border-radius: 30%;
-    }
-
-    .key:hover {
-        border: 2px solid rgba(85, 92, 97, 0.801);
-    }
+    box-shadow: 0px 0px 0px 0px;
 }
