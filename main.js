@@ -1,19 +1,12 @@
-function play(idElement) {
+const btn = document.getElementsByTagName("button");
+const song = document.getElementsByTagName("audio");
 
-    window.document.querySelector(idElement).play();
-
+for (i = 0; i <= song.length; i++) {
+    btn[i]?.addEventListener("click", playSong(i));
 }
 
-const keyList = window.document.querySelectorAll(".key");
-
-for (let i = 0; i < keyList.length; i++) {
-
-    const keys = keyList[i];
-    const songAcess = keys.classList[1];
-    const idSong = `#key_${songAcess}`;
-
-    keys.onclick = function () {
-
-        play(idSong);
-    }
+function playSong(i) {
+    return () => {
+        song[i].play();
+    };
 }
