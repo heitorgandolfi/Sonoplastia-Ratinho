@@ -1,15 +1,13 @@
 body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 16px 0px;
     background-image: url(./assets/background-photo.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     height: 100vh;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 16px 0px;
-
     overflow-x: hidden;
 }
 
@@ -48,13 +46,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
-
     max-width: 400px;
     width: 100%;
     width: 95%;
     padding: 12px 4px;
     border-radius: 12px;
-
     background-image: linear-gradient(150deg, #d7d9df 0, #e6e8f0 50%, #c2c9e0 100%);
     box-shadow: 5px 5px 2px rgb(17, 16, 16);
 }
@@ -63,12 +59,10 @@ button {
     max-width: 100px;
     width: 95%;
     padding: 24px 8px;
-
     font-family: sans-serif;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-
     border-radius: 12px;
     border: 1px solid rgba(207, 207, 207, 0.575);
     box-shadow: 9px 3px 20px -10px rgba(0, 0, 0, 0.65);

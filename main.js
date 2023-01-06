@@ -1,12 +1,7 @@
-const btn = document.getElementsByTagName("button");
 const song = document.getElementsByTagName("audio");
+let btns = document.getElementsByTagName("button");
+btns = [...btns];
 
-for (i = 0; i <= song.length; i++) {
-    btn[i]?.addEventListener("click", playSong(i));
-}
-
-function playSong(i) {
-    return () => {
-        song[i].play();
-    };
-}
+const a = btns.map((btn, i) => {
+    btn.addEventListener("click", () => song[i].play())
+})
