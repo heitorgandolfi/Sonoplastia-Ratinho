@@ -1,5 +1,7 @@
 # Sonoplastia do Ratinho. :mouse:
 
+<img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=success&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=release%20date&message=OCTOBER%202022&color=green&style=for-the-badge"/> <img src="http://img.shields.io/static/v1?label=license&message=MIT&color=informational&style=for-the-badge"/>
+
 <div align="center">
 <img src="https://user-images.githubusercontent.com/113437603/209691579-2c13f7a2-b424-4aa7-a1c2-8547f3bc07c6.png" width="760px">
 </div>
