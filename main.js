@@ -1,7 +1,4 @@
-const song = document.getElementsByTagName("audio");
-let btns = document.getElementsByTagName("button");
-btns = [...btns];
+const song = document.querySelectorAll("audio");
+const btns = document.querySelectorAll("button");
 
-btns.map((btn, i) => {
-    btn.addEventListener("click", () => song[i].play())
-})
+btns.forEach((btn, i) => btn.addEventListener("click", () => song[i].play()));
